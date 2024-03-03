@@ -9,10 +9,9 @@ layout: base.njk
     <div class="love">
         <h3>News</h3>
         <ul>
-            <li>News</li>
-            <li>News</li>
-            <li>News</li>
-            <li>News</li>
+        {% for article in news.article %}
+            <li>{{articles.title}}</li>
+        {% endfor %}
         </ul>
     </div>
 </div>
